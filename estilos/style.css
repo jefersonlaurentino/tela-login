@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, red , orange) no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#login {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.503);
+    color: white;
+    text-align: center;
+    width: 90%;
+    font-size: 1.3rem;
+    border-radius: 0px 20px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.548);
+    padding-bottom: 20px;
+    transition: .7s ease-in-out;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.campo {
+    margin: 40px;
+    position: relative;
+}
+
+.campo > input {
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    caret-color: orange;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translatey( 18px);
+    transition: .5s ease-in-out;
+}
+
+input:focus {
+    border-bottom: 2px solid orange;
+}
+
+input:focus + label{
+    transform: translatey(-18px) scale(.8);
+    color: orange;
+}
+
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid orange;
+}
+
+input:not(:placeholder-shown) + label {
+    transform: translatey(-18px) scale(.8);
+    color: orange;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+output {
+    position: absolute;
+    transform: translateY(13px);
+    cursor: pointer;
+}
+
+span#ver2 {
+    display: none;
+} 
+
+input[type='submit'] {
+    height: 40px;
+    margin: 20px;
+    width: 95px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    transition: .6s;
+}
+
+input[type='submit']:hover {
+    background-color: green;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 520px) {
+    div#login {
+        width: 500px;
+    }
+}
