@@ -11,20 +11,18 @@
 <body>
     <div id="login">
         <h1>Login</h1>
-        <form action="" method="post">
+        <form action="#" method="post">
             <div class="campo">
                 <input type="text" name="e-mail" id="mail" autocomplete="email" placeholder="e-mail">
                 <label for="mail">E-mail</label>
             </div>
             <div class="campo">
-                <input type="password" name="senha" id="isenha" placeholder="senhafgfggf">
+                <input type="password" name="senha" id="isenha" placeholder="senha" minlength="8" maxlength="16">
                 <label for="isenha">Senha</label>
-                    <output id="olho">
-                        <span id="ver1" class="material-icons" onclick="cliquei()">visibility</span>
-                        <span id="ver2" class="material-icons" onclick="cliquei2()">visibility_off</span>
-                    </output>
+                <span id="ver1" class="material-icons" onclick="cliquei()">visibility
+                </span>
             </div>
-                <input type="submit" value="entrar" >
+            <button>entrar</button>
         </form>
 
     <script src="style.js"></script>

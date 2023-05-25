@@ -82,17 +82,13 @@ input::placeholder {
     color: transparent;
 }
 
-output {
+span {
     position: absolute;
-    transform: translateY(13px);
+    transform: translate( -25px,10px);
     cursor: pointer;
 }
 
-span#ver2 {
-    display: none;
-} 
-
-input[type='submit'] {
+button {
     height: 40px;
     margin: 20px;
     width: 95px;
@@ -105,7 +101,7 @@ input[type='submit'] {
     transition: .6s;
 }
 
-input[type='submit']:hover {
+button:hover {
     background-color: green;
     font-size: 1.2rem;
 }
